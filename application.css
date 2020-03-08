@@ -1,0 +1,130 @@
+.tiles {
+  display: inline-flex;
+  padding: 5px;
+  margin: 0;
+  background-color: lightgray;
+  border: 2px solid grey;
+  border-style: outset;
+}
+
+.tiles:hover{
+  cursor: pointer;
+  background-color: grey;
+}
+
+.clicked {
+  background-color: grey;
+  border-style: inset;
+}
+.nothing {
+  background-color: grey;
+  border-style: inset;
+  color:transparent;
+}
+.clicked-bomb {
+  display: inline-flex;
+  padding: 5px;
+  margin: 0;
+  border: 2px solid darkred;
+  border-style: outset;
+  background-color: red;
+  border-style: inset;
+}
+
+.row {
+  list-style: none;
+  display: flex;
+  width: inherit;
+}
+
+.board {
+  width: 400px;
+  height: 320px;
+  margin: 0 auto;
+  padding: 0px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 48px;
+}
+
+.headings {
+  width: 100%;
+  font-family: sans-serif;
+  font-weight: bolder;
+  color: white;
+  text-align: center;
+  padding: 0px;
+  text-shadow: 1px 2px rgb(26, 127, 215);
+  border-radius: 5px;
+  margin: 0px;
+}
+
+.modal {
+  position: fixed;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 2;
+  color: white;
+  text-shadow: 1px 1px black;
+}
+
+.won {
+  margin: 50px;
+  padding: 30px;
+  border-radius: 5px;
+  background-color: white;
+  z-index: 3;
+  display: inline-block;
+  background-image: url("https://media3.giphy.com/media/26tOZ42Mg6pbTUPHW/giphy.gif?cid=790b76116071369f2b99b5a0360592f34900a194b1668080&rid=giphy.gif");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.lost {
+  margin: 50px;
+  padding: 30px;
+  border-radius: 5px;
+  background-color: white;
+  z-index: 3;
+  display: inline-block;
+  background-image: url("https://media1.giphy.com/media/eHekyNso61EqY/giphy.gif?cid=790b76118b84b82d87dbce3973bc95a365b33f5534da5935&rid=giphy.gif");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.replay {
+  position: relative;
+  padding: 10px 20px;
+  color: #fff;
+  background: rgb(6, 223, 247);
+  font-weight: 700;
+  border-radius: 5px;
+  box-shadow: 0 4px 0 0 rgb(5, 135, 196);
+  font-size: 24px;
+}
+
+.replay:hover {
+  background: rgba(5, 118, 171, 0.906);
+  cursor: pointer;
+  border-style: inset;
+}
+
+body {
+  background-image: url("https://media0.giphy.com/media/U3qYN8S0j3bpK/giphy.gif?cid=790b7611e12bf5c323b17679dfd5ba14950cd8d9abc44167&rid=giphy.gif");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.x-out {
+  margin: 0px;
+  padding: 0px;
+  text-align: right;
+}
+.x-out:hover {
+  color: red;
+  cursor: pointer;
+}
